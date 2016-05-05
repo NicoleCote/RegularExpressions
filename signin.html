@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>Regular Expressions</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+    <link rel="stylesheet" media="screen" href="css/signin.css"/>
+
+    </head>
+  
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>Username &amp; Password</h1>
+      </header>
+      <div class="container">
+
+        <div>
+          <form id="signInForm" class="text" action="">
+            <p>Please enter Username and Password:</p>
+            <p><b>Username Requirements:</b></p>
+            <ul>
+              <li>Must be 8 to 20 characters long.</li>
+              <li>Must start and end with a letter.</li>
+            </ul>
+            <p><b>Password Requirements:</b></p>
+            <ul>
+              <li>Must have a minimum length of 8 characters.</li>
+              <li>Must include 3 out of 4 of the following special requirements:</li>
+            </ul>
+            <ol style="margin-left:45px">
+              <li>Contain at least 1 upper-case letter.</li>
+              <li>Contain at least 1 lower-case letter.</li>
+              <li>Contain at least 1 special character (&amp;, *, $).</li>
+              <li>Contain at least 1 numeric character.</li>
+            </ol>
+            <ul>
+              <li>Cannot contain all or part of your username(Two or more consecutive characters from the user name cannot be used in the password).</li>
+            </ul>
+            <p>Username: <input id="username" type="text" /><span id="usernameError" style="color:red"></span></p>
+            <p>Password: <input id="password" type="text" /><span id="passwordError" style="color:red"></span></p>
+            <p class="center">
+            <input id="submit" style="" type="button" onclick="submitInfo();" value="Submit" /><span id="success" style="color:green"></span>
+            </p>
+          </form>
+        </div>
+      </div>
+      
+      <footer>
+        <p>Created by Nicole Cote</p>
+      </footer>
+    </div>
+
+    <!-- Include external javascript file here -->
+    <script type="text/javascript" src="js/signin.js"></script>
+
+  </body>
+</html>
