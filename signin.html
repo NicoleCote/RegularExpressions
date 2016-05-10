@@ -37,8 +37,13 @@
             <ul>
               <li>Cannot contain all or part of your username(Two or more consecutive characters from the user name cannot be used in the password).</li>
             </ul>
-            <p>Username: <input id="username" type="text" /><span id="usernameError" style="color:red"></span></p>
-            <p>Password: <input id="password" type="text" /><span id="passwordError" style="color:red"></span></p>
+            <label for="username">Username: </label>
+            <input id="username" type="text" /><span id="usernameError" style="color:red"></span>
+            <br>
+            <br>
+            <label for="password">Password: </label>
+            <input id="password" type="text" /><span id="passwordError" style="color:red"></span>
+            <br>
             <p class="center">
             <input id="submit" style="" type="button" onclick="submitInfo();" value="Submit" /><span id="success" style="color:green"></span>
             </p>
